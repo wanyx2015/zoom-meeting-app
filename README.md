@@ -42,6 +42,9 @@ If you want to build the Ionic zoom demo app from scratch, here is the steps
 
 ## Build the initial framework
 ```
+# install Ionic and Cordova
+sudo npm install -g ionic cordova
+
 # create an initial app 
 ionic start zoom-app android
 

@@ -28,6 +28,7 @@ plugins/
 plugins/android.json
 plugins/ios.json
 www/
+!zoomus-plugin/www/plugin.js
 $RECYCLE.BIN/
 
 .DS_Store

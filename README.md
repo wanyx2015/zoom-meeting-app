@@ -26,6 +26,9 @@ cd zoom-meeting-app
 # install necessary components
 npm install
 
+# add android platform support
+ionic cordova platform add android
+
 # add the plugin to Ionic app
 cordova plugin add zoomus-plugin/
 

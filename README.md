@@ -1,5 +1,7 @@
 # Cordova plugin for Android Zoom SDK
 
+
+
 ## About the plugin
 
 - `zoomus-plugin` is the plugin folder, right now it support android only
@@ -11,7 +13,25 @@
 cordove plugin remove zoom-plugin
 cordova plugin add zoomus-plugin/
 ```
+## How to run this Ionic demo app for Zoom.us meeting
 
+1. Clone the repo: `git clone git@github.com:wanyx2015/zoom-meeting-app.git`
+2. Edit parameters in `zoomus-plugin/src/android/com/example/Constants.java`
+3. Connect your Android phone with your computer, enable developer mode
+4. Run following commands to run it on your device
+
+```
+cd zoom-meeting-app
+
+# install necessary components
+npm install
+
+# add the plugin to Ionic app
+cordova plugin add zoomus-plugin/
+
+# build and run
+ionic cordova run android
+```
 
 # How to use the plugin
 

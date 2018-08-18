@@ -35,7 +35,7 @@ npm install --save @ionic-native/app-version
 ```
 ## Edit Zoom plugin parameters
 
-You need to provide below parameters in Constants.java (*zoomus-plugin/src/android/com/example/Constants.java*):
+You need to provide below parameters in Constants.java (_**zoomus-plugin/src/android/com/example/Constants.java**_):
 * APP_KEY
 * APP_SECRET
 * USER_ID

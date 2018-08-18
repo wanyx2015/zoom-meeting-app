@@ -53,8 +53,7 @@
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-ionic-keyboard": {},
       "cordova-plugin-android-support-v4-jar": {},
-      "cordova-plugin-app-version": {},
-      "zoom-plugin": {}
+      "cordova-plugin-app-version": {}
     },
     "platforms": [
       "android"

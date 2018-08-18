@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="zoom-plugin"
+    version="1.0.0">
+    <name>Zoom Plugin</name>
+    <description></description>
+    <license>MIT</license>
+    <keywords></keywords>
+    <repo>https://github.com/6connex/zoomus-plugin.git</repo>
+    <issue>https://github.com/6connex/zoomus-plugin/issues</issue>
+
+    <!-- android -->
+    <platform name="android">
+      <js-module src="www/plugin.js" name="plugin">
+        <runs/>
+
+        <!-- This is the window variable name you want, like window.MyCordovaPlugin -->
+        <clobbers target="ZoomPlugin" />
+      </js-module>
+      <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="ZoomPlugin">
+          <param name="android-package" value="com.example.ZoomPlugin" />
+          <param name="onload" value="true" />
+        </feature>
+      </config-file>
+
+       <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <activity android:label="Zoom" android:name="com.example.MainActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        </config-file>
+      <source-file src="src/android/com/example/ZoomPlugin.java" target-dir="src/com/example" />
+      <source-file src="src/android/com/example/MainActivity.java" target-dir="src/com/example" />
+      
+      <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+      <resource-file src="src/android/ZoomLib/mobilertc.aar" target="ZoomLib/mobilertc.aar" />
+      <resource-file src="src/android/ZoomLib/commonlib.aar" target="ZoomLib/commonlib.aar" />
+
+      <source-file src="src/android/com/example/Constants.java" target-dir="src/com/example/" />
+
+    </platform>
+
+    <!-- ios -->
+    <platform name="ios">
+        <js-module src="www/plugin.js" name="plugin">
+            <runs/>
+            <clobbers target="ZoomPlugin" />
+        </js-module>
+        <config-file target="config.xml" parent="/*">
+            <feature name="ZoomPlugin">
+                <param name="ios-package" value="ZoomPlugin" onload="true" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/ZoomPlugin.h" />
+        <source-file src="src/ios/ZoomPlugin.m" />
+    </platform>
+</plugin>

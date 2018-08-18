@@ -1,0 +1,12 @@
+{
+  "name": "zoom-plugin",
+  "version": "1.0.0",
+  "cordova": {
+    "id": "zoom-plugin",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "description": "A starting point for a Cordova Plugin"
+}
